@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cafe24SsurroundAir", sans-serif;
+  text-decoration: none;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  padding: 1rem;
+  gap: 1rem;
+
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: gray;
+}
+
+.main_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title_light {
+  font-size: large;
+  font-family: "Cafe24SsurroundAir";
+}
+
+.title_bold {
+  font-size: xx-large;
+  font-family: "Cafe24Ssurround";
+}
+
+.title_img {
+  width: 50%;
+}
+
+.square_button {
+  font-size: x-large;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0rem;
+  color: black;
+  background-color: #ffcdbc;
+  border-radius: 0.5rem;
+  border-width: 0px;
+
+  cursor: pointer;
+}
+
+.square_button:hover {
+  background-color: #f99d76;
+}
+
+.result_img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
