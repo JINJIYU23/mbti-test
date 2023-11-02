@@ -12,15 +12,15 @@ const ResultPage = () => {
 
   useEffect(() => {
     if (!Kakao.isInitialized()) {
-      Kakao.init("4fa305e9da664d7305f5647b7f1ff172");
+      Kakao.init("c0e2c0f91b64874ccf975d6be8bd97ed");
     }
   }, []);
 
   const clickShareHandler = () => {
     Kakao.Share.sendCustom({
-      templateId: 99094,
+      templateId: 989432,
       templateArgs: {
-        THU: "https://mbti-test-mauve.vercel.app" + resultMBTIData.image,
+        THU: "https://mbti-test-4sk1e4g07-jinjiyu23s-projects.vercel.app/" + resultMBTIData.image,
         MATCH_CAT: resultMBTIData.match_cat,
       },
     });
