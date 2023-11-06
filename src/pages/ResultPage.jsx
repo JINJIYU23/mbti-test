@@ -12,15 +12,15 @@ const ResultPage = () => {
 
   useEffect(() => {
     if (!Kakao.isInitialized()) {
-      Kakao.init("c0e2c0f91b64874ccf975d6be8bd97ed");
+      Kakao.init("7237689d5f422c5ea809c8769fb5ba8e");
     }
   }, []);
 
   const clickShareHandler = () => {
     Kakao.Share.sendCustom({
-      templateId: 989432,
+      templateId: 100244,
       templateArgs: {
-        THU: "https://mbti-test-4sk1e4g07-jinjiyu23s-projects.vercel.app/" + resultMBTIData.image,
+        THU: "https://www.mbti-test-rose.vercel.app" + resultMBTIData.image,
         MATCH_CAT: resultMBTIData.match_cat,
       },
     });
@@ -28,7 +28,7 @@ const ResultPage = () => {
 
   return (
     <div className={styles.layout}>
-      <p className={styles.title_light}>나와 어울리는 고양이는?</p>
+      <p className={styles.title_light}>나와 어울리는 고양이는??</p>
       <p className={styles.title_bold}>
         {resultMBTIData.match_cat} ({mbti})
       </p>
